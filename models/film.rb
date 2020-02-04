@@ -74,6 +74,16 @@ class Film
     return Ticket.map_items(ticket_data)
   end
 
+  def self.find(id)
+  sql = "SELECT * FROM films
+  WHERE id = $1"
+  values = [id]
+  results = SqlRunner.run(sql, values)
+  film_hash = results.first
+  film = Film.new(film_hash)
+  return film
+end
+
   def number_of_viewers()
     return customers.count
   end
