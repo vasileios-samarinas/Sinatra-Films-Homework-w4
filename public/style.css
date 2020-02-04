@@ -1,9 +1,21 @@
 body {
 font-family: "Georgia", serif;
-background-color: cadetblue;
-color: lightgrey;
-text-decoration: underline orange;
+background-color: #7C9EA9;
 font-size: 150%;
-line-height:120%;
-text-align: center;
+line-height:10%;
+max-width: 500px;
+margin: auto;
+}
+
+ul {
+ list-style-type: none;
+}
+
+li {
+  border-bottom: 1px solid orange;
+  color: #EFFAF0;
+}
+
+header {
+  height: 100px;
 }
